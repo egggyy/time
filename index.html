@@ -1,8 +1,18 @@
 ﻿<!DOCTYPE HTML>
 <html lang="ch">
+	<style>
+		@font-face {
+            	font-family: 'eggy_font';
+            	src: url('eggy_font.ttf');
+        	}
+        	#timePar {
+            	font-size: 10em;
+            	font-family: 'eggy_font', sans-serif;
+            	text-align: center;
+        	}
+	</style>
 	<body onload="doStartClock();">
-		<p id="timePar" style="font-size:10em;font-family:'方正兰亭圆简体_粗';text-align:center;">正在加载时间...</p>
-	    <p>本网站提供的时间为您的系统时间，并不代表标准时间</p>
+		<p id="timePar"></p>
 		<button id="button"style="background-color:white;" onmouseover="whenOnMouseOver('button');" onmouseout="whenOnMouseOut('button');" onclick="doClockTickAgain();">重新加载时钟</button>
 		<input type="time" id="input" style="background-color:white;" onmouseover="whenOnMouseOver('input');" onmouseout="whenOnMouseOut('input');"></input>
 		<button id="button2" style="background-color:white;" onmouseover="whenOnMouseOver('button2');" onmouseout="whenOnMouseOut('button2');" onclick="doTX();">启用（下方0表示未设置，1表示设置）</button>
